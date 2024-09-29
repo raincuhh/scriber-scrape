@@ -1,0 +1,42 @@
+{
+   "name": "yt-converter",
+   "version": "1.0.1",
+   "description": "A cross-platform application that allows users to input a Youtube playlist/song link, scrape the song(s), conver the videos to MP3, and automatically add matching songs to a Spotify playlist using the Spotify Web API.",
+   "main": "./jsout/main.js",
+   "scripts": {
+      "ycv:dev": "tsc && electron .",
+      "ycv:tsc": "tsc",
+      "ycv:start": "electron-forge start",
+      "ycv:package": "electron-forge package",
+      "ycv:make": "electron-forge make",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "keywords": [
+      "scraper",
+      "yt-playlist",
+      "youtube-playlist",
+      "song-to-mp3",
+      "spotify-converter",
+      "spotify",
+      "youtube"
+   ],
+   "author": "filip ryan",
+   "license": "MIT",
+   "devDependencies": {
+      "@electron-forge/cli": "^7.5.0",
+      "@electron-forge/maker-deb": "^7.5.0",
+      "@electron-forge/maker-rpm": "^7.5.0",
+      "@electron-forge/maker-squirrel": "^7.5.0",
+      "@electron-forge/maker-zip": "^7.5.0",
+      "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
+      "@electron-forge/plugin-fuses": "^7.5.0",
+      "@electron/fuses": "^1.8.0",
+      "@types/electron": "^1.4.38",
+      "@types/node": "^22.7.4",
+      "electron": "^32.1.2",
+      "typescript": "^5.6.2"
+   },
+   "dependencies": {
+      "electron-squirrel-startup": "^1.0.1"
+   }
+}
