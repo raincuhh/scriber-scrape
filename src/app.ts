@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require("electron/main");
+import { init } from "./init";
 //const path = require("node:path");
 
 class Application {
@@ -33,6 +34,7 @@ class Application {
 
       try {
          this.m_win.loadFile("./app/index.html");
+         init();
       } catch (err) {
          console.error("Failed to load file:", err);
       }

@@ -1,16 +1,16 @@
 {
-   "name": "scriber",
+   "name": "yt-spotify-mp3-converter",
    "version": "1.0.1",
-   "description": "A cross-platform application that allows users to input a Youtube/Spotify playlist/song link, scrape the song(s) and add them to a folder.",
+   "description": "A cross-platform application that allows users to input a Youtube/Spotify playlist/song link, and convert them to a folder.",
    "main": "./dist/main.js",
    "scripts": {
       "clean": "rimraf ./dist",
-      "scriber:dev": "tsc && electron .",
-      "scriber:tsc": "tsc",
-      "scriber:start": "electron-forge start",
-      "scriber:package": "electron-forge package",
-      "scriber:make": "electron-forge make",
-      "scriber:watch": "npx tsc --watch",
+      "dev": "tsc && electron .",
+      "tsc": "tsc",
+      "start": "electron-forge start",
+      "package": "electron-forge package",
+      "make": "electron-forge make",
+      "watch": "npx tsc --watch",
       "test": "echo \"Error: no test specified\" && exit 1"
    },
    "keywords": [
@@ -35,6 +35,7 @@
       "@electron/fuses": "^1.8.0",
       "@types/electron": "^1.4.38",
       "@types/node": "^22.7.4",
+      "boxicons": "^2.1.4",
       "electron": "^32.1.2",
       "typescript": "^5.6.2"
    },
