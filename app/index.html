@@ -5,9 +5,110 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
       <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-      <title>YT-Playlist-to-Spotify-Playlist-converter</title>
+      <title>yt-converter</title>
    </head>
    <body>
-      <main class="app">hello world</main>
+      <div id="app">
+         <nav id="nav"></nav>
+         <main class="main">
+            <div class="page" id="home">
+               <div class="cont">
+                  <nav class="toc">
+                     <header class="toc-header">Table of Contents</header>
+                     <ul class="toc-list">
+                        <li class="toc-item">Intro</li>
+                        <li class="toc-item">Guide</li>
+                        <li class="toc-item">Input</li>
+                        <li class="toc-item">Footer</li>
+                     </ul>
+                  </nav>
+                  <div class="col">
+                     <header class="col-cat" id="col-intro">
+                        <p>YT-Converter</p>
+                        <p class="p-marg-s">
+                           I created the yt-converter to simplify a process i both; found myself doing alot,
+                           and finding doing the task as tedious.
+                        </p>
+                        <p class="p-marg-m">
+                           I frequently converted songs from Youtube to MP3 to add to my spotify playlists
+                           manually, which kind of became a tiresome task, especially so for a large amount of
+                           songs. This project is designed to make said process much easier and faster, by
+                           automating it with just a few clicks.
+                        </p>
+                        <p class="p-marg-m">
+                           The converter allows you to paste a Youtube playlist or song link, convert it to
+                           MP3, then easily add it to spotify using their local files setting.
+                        </p>
+                     </header>
+                     <section class="col-cat" id="col-guide">
+                        <p>Guide</p>
+                        <p class="p-marg-s">
+                           <span>1. Get the Youtube Link</span>
+                           - Go to Youtube and find the playlist / song you want to convert.
+                           <br />
+                           - Copy the URL from your browser's address bar. For example, for a playlist, it
+                           would look like:
+                           <span>https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID</span>
+                        </p>
+                        <p class="p-marg-m">
+                           <span>2. Paste the link in the YT-Converter</span>
+                           - In the input field below, paste the Youtube link you just copied.
+                           <br />
+                           - Hit the "Convert" button.
+                        </p>
+                        <p class="p-marg-m">
+                           <span>3. Add the MP3 Files to Spotify (if you are adding)</span>
+                           - Open Spotify and go to
+                           <span>Edit > Preferences (or Spotify > Settings on macOS.)</span>
+                           <br />
+                           - Scroll down to the
+                           <span>Local Files</span>
+                           section, and toggle on the
+                           <span>Show Local Files</span>
+                           option.
+                           <br />
+                           - Click
+                           <span>Add a Source</span>
+                           and browse for the folder where your MP3 files are saved. (e.g,
+                           <span>C:/Users/JohnDoe/Path/To/Folder</span>
+                           )
+                           <br />
+                           - Spotify will now display the songs in the
+                           <span>Local Files</span>
+                           section, and you can add them to any of your playlists.
+                        </p>
+                     </section>
+                     <section class="col-cat" id="col-input">
+                        <div class="input-cat" id="input-spotify"></div>
+                        <div class="input-cat" id="input-field">
+                           <div class="input-field-icon"></div>
+                           <input
+                              type="text"
+                              class="input-field-area"
+                              id="input-field-area"
+                              spellcheck="false"
+                              autocomplete="off"
+                              autocapitalize="off"
+                              maxlength="512"
+                              placeholder="paste the playlist/video link here"
+                              aria-label="playlist/video link area"
+                           />
+                        </div>
+                        <div class="input-cat" id="input-options">
+                           <div class="options-list"></div>
+                        </div>
+                     </section>
+                     <footer class="col-cat" id="col-footer"></footer>
+                  </div>
+               </div>
+            </div>
+         </main>
+      </div>
+      <div id="load">
+         <div class="load_bg"></div>
+         <div id="load_t">
+            <p>ytc</p>
+         </div>
+      </div>
    </body>
 </html>

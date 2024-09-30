@@ -1,14 +1,16 @@
 {
-   "name": "yt-converter",
+   "name": "scriber",
    "version": "1.0.1",
-   "description": "A cross-platform application that allows users to input a Youtube playlist/song link, scrape the song(s), conver the videos to MP3, and automatically add matching songs to a Spotify playlist using the Spotify Web API.",
-   "main": "./jsout/main.js",
+   "description": "A cross-platform application that allows users to input a Youtube/Spotify playlist/song link, scrape the song(s) and add them to a folder.",
+   "main": "./dist/main.js",
    "scripts": {
-      "ycv:dev": "tsc && electron .",
-      "ycv:tsc": "tsc",
-      "ycv:start": "electron-forge start",
-      "ycv:package": "electron-forge package",
-      "ycv:make": "electron-forge make",
+      "clean": "rimraf ./dist",
+      "scriber:dev": "tsc && electron .",
+      "scriber:tsc": "tsc",
+      "scriber:start": "electron-forge start",
+      "scriber:package": "electron-forge package",
+      "scriber:make": "electron-forge make",
+      "scriber:watch": "npx tsc --watch",
       "test": "echo \"Error: no test specified\" && exit 1"
    },
    "keywords": [
